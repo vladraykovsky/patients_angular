@@ -1,0 +1,15 @@
+<div class ="com">
+<h2>Comments</h2>
+  <div class="commentList">
+    <div class="comment-border" *ngFor="let comment of comments">
+      <button (click)="delete(comment)">X</button>
+      <mat-card>
+      {{comment.commentValue}}
+       </mat-card>
+    </div>
+  </div>
+  <div class="commentAdd">
+    <input [(ngModel)]="commentAdd.commentValue" style="width: 300px; height: 45px; float: left">
+    <button  style="width: 100px; height: 45px; float: right; " (click)="add()">+</button>
+  </div>
+</div>

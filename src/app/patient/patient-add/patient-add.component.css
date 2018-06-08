@@ -1,0 +1,24 @@
+
+div.top {
+  float: right;
+  display:block;
+  width: 100%;
+  border-bottom: solid;
+  border-width: 2px;
+}
+
+button {
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+}
+
+div.example-container {
+  display: block;
+  flex-direction: column;
+  padding-top: 80px;
+}
+
+div.example-container > * {
+  width: 100%;
+}

@@ -1,0 +1,35 @@
+div.com {
+  margin-top: 10px;
+  padding: 2%;
+  width: 600px;
+  height: 550px;
+  display: inline-block;
+  background-color: gray;
+  overflow: auto;
+}
+
+div.commentList {
+  height: 420px;
+  overflow: scroll;
+}
+
+.mat-list {
+}
+
+.mat-list-item {
+  border-top: solid;
+  border-width: 2px;
+}
+
+dib.commentAdd  button {
+  width: 150px;
+  height: 100px;
+  text-align: center;
+  border: 5px solid;
+}
+
+div.comment-border{
+  padding-bottom: 20px;
+  padding-left: 18px;
+  width: 550px;
+}

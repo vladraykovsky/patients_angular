@@ -1,0 +1,19 @@
+<div class="patientAdd">
+  <div class="top">
+    <button (click)="edit()">edit</button>
+    <button (click)="delete()">delete</button>
+  </div>
+
+  <div class="info-container">
+    <p>name: {{patient.name}}</p>
+    <p>surname: {{patient.surname}}</p>
+    <p>date of birth: {{patient.dateOfBirth}}</p>
+    <p>country: {{patient.country}}</p>
+    <p>state: {{patient.state}}</p>
+    <p>sex: {{patient.sex}}</p>
+  </div>
+   <div class="comment">
+        <app-comment [patient]="patient"></app-comment>
+   </div>
+
+</div>

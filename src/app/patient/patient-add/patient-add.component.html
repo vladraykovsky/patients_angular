@@ -1,0 +1,34 @@
+<div class="patientAdd">
+  <div class="top">
+    <button (click)="save()">save</button>
+    <button (click)="cancel()">cancel</button>
+  </div>
+
+  <div class="example-container">
+    <mat-form-field>
+      <input matInput [(ngModel)]="patientAdd.name" placeholder="name">
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput [(ngModel)]="patientAdd.surname"  placeholder="surname">
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput [(ngModel)]="patientAdd.dateOfBirth" placeholder="date of birth">
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput [(ngModel)]="patientAdd.country" placeholder="country">
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput [(ngModel)]="patientAdd.state" placeholder="state">
+    </mat-form-field>
+    <mat-form-field>
+      <mat-select placeholder="sex" [(value)]="patientAdd.sex">
+        <mat-option value="male" >
+          male
+        </mat-option>
+        <mat-option value="female" >
+          female
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+  </div>
+</div>

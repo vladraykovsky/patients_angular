@@ -1,0 +1,28 @@
+
+<div class="main">
+
+<div class ="listPersons">
+<div class = "searchMenur">
+ <mat-form-field>
+    <input matInput [(ngModel)]="search" placeholder="enter patient"/>
+ </mat-form-field>
+  <button (click)="navigateToAdd()">New Patient</button>
+</div>
+
+<div class="scroll-list" style="overflow: scroll">
+<mat-list>
+  <mat-list-item *ngFor="let patient of patients| patientList: search" [routerLink]="[patient.id]">
+   <p style="display: inline-block" matLine>{{patient.name}} {{patient.surname}}
+   </p>
+    <mat-icon *ngIf="patient.sex === 'female'" style="justify-content: end" >face</mat-icon>
+    <mat-icon *ngIf="patient.sex === 'male'" style="justify-content: end">mood</mat-icon>
+    <p matLine>{{patient.dateOfBirth}} </p>
+  </mat-list-item>
+</mat-list>
+</div>
+</div>
+
+<div class="children">
+  <router-outlet></router-outlet>
+</div>
+</div>

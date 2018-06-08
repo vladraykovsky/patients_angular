@@ -1,0 +1,40 @@
+div.scroll-list {
+  overflow: scroll;
+  height: 550px;
+}
+
+div.listPersons {
+  display: inline-block;
+
+  width: 25%;
+  margin-left: 25px;
+  height: 100%;
+}
+
+div.searchMenur {
+  display: inline-block;
+  border-bottom: solid;
+  border-width: 2px;
+}
+
+button {
+  padding: 10px;
+  border-radius: 5px;
+  margin: 10px;
+}
+
+.mat-list {
+}
+
+.mat-list-item {
+  border-top: solid;
+  border-width: 2px;
+}
+
+div.children {
+  vertical-align: top;
+  margin-left: 3%;
+  display: inline-block;
+  width: 65%;
+  height: 100%;
+}
